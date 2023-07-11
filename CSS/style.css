@@ -1,0 +1,94 @@
+@font-face {
+    font-family:"raleway-regular";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family:"raleway-medium";
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family:"raleway-bold";
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family:"raleway-semibold";
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family:"raleway-black";
+    src: url(../fonts/Raleway-Black.ttf);
+}
+
+:root{
+    --primary:rgb(238, 191, 0);
+    --secondary:rgb(35, 43, 56);
+    --ternary:rgb(108, 108, 108);
+    --dange:rgb(254, 69, 69);
+    --pure:rgb(254, 254, 254);
+    --light:rgb(240, 240, 240);
+    --heaven:rgb(255, 255, 255);
+    --footer:rgb(45, 51, 63);
+}
+ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    padding: 15px;
+    margin:0 auto;
+}
+
+@media(min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media(min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media(min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media(min-width: 1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+body{
+    -webkit-font-smoothing:antialiased;
+}
+.topbar{
+    background-color: var(--secondary);
+    color: var(--pure);
+    font-family:"raleway-semibold";
+    padding: 0.75rem;
+}
+.topbar .auth > div a{
+    color: var(--pure);
+}
+.topbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar .container .icons a{
+    margin-right: 0.6rem;
+}
+.topbar .container .auth {
+    display: flex;
+}
+
+.topbar .container .auth .devider{
+    padding: 0 0.6rem;
+}
+.topbar .auth > div img{
+    margin-right: 0.35rem;
+}
