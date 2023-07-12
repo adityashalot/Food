@@ -74,16 +74,9 @@ body{
 .topbar .auth > div a{
     color: var(--pure);
 }
-.topbar .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .topbar .container .icons a{
     margin-right: 0.6rem;
-}
-.topbar .container .auth {
-    display: flex;
 }
 
 .topbar .container .auth .devider{
@@ -91,4 +84,30 @@ body{
 }
 .topbar .auth > div img{
     margin-right: 0.35rem;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.items-center{
+    align-items: center;
+}
+nav .top{
+    padding: 1.5rem 0;
+}
+nav .top .contact h5, nav .top .timing h5{
+    font-family:"raleway-black";
+    margin-bottom: 0.25rem;
+}
+nav .top .contact h6, nav .top .timing h6{
+    font-family:"raleway-medium";
+    letter-spacing: 0.0.55rem;
+    font-size: 0.75rem;
+    color: var(--ternary);
+}
+
+nav .top .contact img, nav .top .timing img{
+    margin-right: 1rem;
 }
