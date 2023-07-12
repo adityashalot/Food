@@ -111,3 +111,39 @@ nav .top .contact h6, nav .top .timing h6{
 nav .top .contact img, nav .top .timing img{
     margin-right: 1rem;
 }
+.justify-center{
+    justify-content: center;
+}
+nav .navbar a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-family:"raleway-semibold";
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    transition:all .3s ease;
+}
+nav .navbar a.active{
+    color: var(--pure);
+    background-color: var(--primary);
+}
+nav .navbar a:hover{
+    background-color: var(--primary);
+    color: var(--pure);
+}
+.magic-shadow{
+    position: relative;
+    background: var(--heaven);
+}
+.magic-shadow:after{
+    content:'';
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-position: center;
+    background-image: url(../icons/shadow.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -22px;
+    z-index: -1;
+
+}
